@@ -1,0 +1,376 @@
+@import url('/fonts/AmaticSC-Regular.ttf');
+@import url('/fonts/IndieFlower-Regular.ttf');
+@import url('/fonts/YanoneKaffeesatz-VariableFont_wght.ttf');
+
+/*font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Indie Flower', cursive;*/
+@font-face{
+    font-family: 'ObelixPro';
+    src: url('/fonts/8477.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+
+    margin: 0px;
+
+
+  overflow-x: hidden;
+}
+header{
+    position: relative;
+    
+}
+main{
+    margin: 0px;
+}
+.car{
+    background-image: url("pic/asset_car.png");
+    width: 200px;
+    height:400px;
+    top: 50%;
+    opacity: 0;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+left: 32%;
+    
+}
+
+li{
+  font-family: 'Amatic SC', cursive;
+    text-decoration: none;
+
+    list-style-type: none;
+    font-size: 25px;
+    
+}
+.big{
+position:fixed;
+    top: 200px;
+    transition: all 1s;
+    display: block;
+      font-family: 'ObelixPro';
+    color: white;
+    z-index: 101;
+    opacity: 1;
+    text-align: center;
+    margin-left: 15vw;
+
+    
+
+    font-size: 350px;
+ 
+}
+.moon{
+        position:absolute;
+    top: 200px;
+    z-index: 100;
+    left: 15%;
+    width: 500px;
+    height: 500px;
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    
+    
+    
+    background-image: url("/pic/moon.png");
+}
+.star{
+    background-image: url("/pic/star.png");
+    position: absolute;
+    top: 300px;
+    left: 250px;
+    width: 150px;
+    height: 150px;
+    left: 80vw;
+   
+}
+.scroll{
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    z-index: 100;
+    transition: all 1s;
+ opacity: 1;
+    left: 25%;
+    width: 100%;
+        font-family: 'ObelixPro';
+ top: 90vh;
+  
+
+
+}
+.cover{
+    background-image: url("pic/down.png");
+    width: 110%;
+    height: 350px;
+    position: absolute;
+    left: 0px;
+    transition: all 1s;
+
+  animation: cover 4s  infinite;
+    top: 92vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: ;
+}
+.topper{
+    width: 100%;
+    height: 500px;
+}
+.usa{
+    background-image: url("pic/usa%20all(1).png");
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 500px;
+    transition: all 1s;
+      margin: auto; 
+
+}
+.texti{
+    opacity: 0;
+    font-family: 'ObelixPro'; 
+     color: black;
+    font-size: 80px;
+    position: absolute;
+    top: 4600px;
+    transition: all 2s;
+   left: 25%;
+    z-index: 1000;
+    text-align:center;
+}
+
+.coverend{
+    background-image: url("pic/down-2.png");
+    width: 200%;
+
+        
+       
+     animation: cover 4s  infinite;
+    position: relative;
+  
+    transition: all 1s;
+    height: 500px;
+    background-repeat: repeat-x;
+}
+.blue{
+    background-color: #3193B1;
+    width: 100%;
+    height: 500px;
+}
+
+@keyframes cover {   
+  0% {     
+   left: 0px;   
+  }   
+  50% {
+    left: -50px;
+   }
+    100% {
+    left: 0px;
+   }
+}
+.start{
+    background-image: url(pic/1st.png);
+    width: 100%;
+    height:10000px;
+    -webkit-background-size: cover;
+    background-size:cover ;
+}
+.bgal{
+    background-image: url("pic/bg1.png");
+    width:220vw;
+    height: 10000px;
+    position: absolute;
+    left: -500px;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+}
+.higher{
+    height: 6150px;
+    width: 100%;
+    z-index: 10000;
+    position:absolute;
+}
+.wrapper{
+    background-image: url("pic/wrap.png");
+    width: 150px;
+    cursor: pointer;
+    left:75%;
+    position: fixed;
+    height:150px;
+
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+ul{
+   display: none;
+      transition: all 1s;
+   position: fixed;
+
+    top: 5%;
+    left: -3%;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+}
+
+header{
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
+    width: 100%;
+    height: 150px;
+}
+.logo{
+font-size: 55px;
+    font-family: 'ObelixPro';
+    width: 450px;
+    height: 96px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+li{
+  
+    background: #fff;
+    width: 103%;
+    margin: 0;
+    height: 25%;
+      font-family: 'ObelixPro';
+    border: 3px solid black;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 15%;
+    transition: all 1s;
+    box-sizing: border-box;
+vertical-align:bottom;
+    
+    
+}
+.upper{
+    width: 175%;
+    height: 250px;
+    opacity: 1;
+    overflow: hidden;
+    transition: all 1s;
+        animation: cover 4s  infinite;
+    background-image: url('pic/2.png');
+    position: absolute;
+    top: 2850px;
+  left: -57px;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.downer1{
+    width: 175%;
+  
+        animation: cover 4s  infinite;
+    height: 450px;
+    background-repeat: repeat-x;
+ 
+    background-image: url('pic/down.png');
+    position: absolute;
+    top: 5800px;
+    left: -57px;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.upperModern{
+    width: 175%;
+    height: 250px;
+    opacity: 1;
+    overflow: hidden;
+    transition: all 1s;
+     
+    background-image: url('pic/2.png');
+    position: absolute;
+    top: 2850px;
+      left: -57px;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.downerModern{
+    width: 175%;
+  
+    height: 450px;
+    background-repeat: repeat-x;
+ 
+    background-image: url('pic/down.png');
+    position: absolute;
+    top: 5800px;
+   left: -57px;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.caption{
+    font-family: "ObelixPro";
+background-image: url("pic/saying.png");
+    position: absolute;
+    -webkit-background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1000;
+    width: 120vw;
+    height: 600px;
+    padding: 25px;
+    left: 5%;
+    top: 6800px;
+    font-size: 50px;
+}
+.logoSmall{
+font-size: 25px;
+    font-family: 'ObelixPro';
+    width: 250px;
+    height: 50px;
+    position: relative;
+    left: 50px;
+    top: 10px;   
+}
+.stylewrap{
+    display: flex;
+    margin-left: 25%;
+  
+    
+}
+.ah{
+      text-decoration: none;
+    color: black;
+    font-family: "obelixPro";
+    text-decoration:none;
+
+    margin-left: 50px;
+    margin-top: 25px;
+    
+
+}
+.ah1{
+      text-decoration: none;
+    color: black;
+  
+    font-family: "obelixPro";
+    text-decoration:none;
+    margin-top: 25px;
+    
+
+}
+.message{
+    position: fixed;
+    background: #fff;
+    border: solid 5px black;
+    z-index: 1500;
+    width: 500px;
+    height: 200px;
+  left: 25%;
+    font-family: "obelixPro";
+    font-size:35px;
+    text-align: center;
+    top: 25%;
+}
